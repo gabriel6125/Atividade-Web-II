@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import TaskSummary from './components/TaskSummary';
 import TaskList from './components/TaskList';
+import './App.css'
 
 export default function App() {
   const [tarefas, setTarefas] = useState([
@@ -28,7 +29,7 @@ export default function App() {
   const pendentes = total - concluidas;
 
   return (
-    <div>
+    <div className='app-container'>
       <Header 
         titulo="Gerenciador Acadêmico" 
         descricao="Organize suas entregas, trabalhos e revisões de forma simples." 
